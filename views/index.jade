@@ -1,2 +1,36 @@
-h1
-  a(href='http://www.franz-enzenhofer.com/') Franz Enzenhofer
+doctype html
+html
+  //- - var user = {address: 'bobbob'}
+  head
+    title my jade template
+  body
+    h1 Hello #{name}
+    h1 foo
+    h2=book.name
+    h3 "#{book.name}" for #{book.price}$
+    #content
+      .block
+        input#bar.foo1.foo2
+        input(type=input.type,value='Hello #{input.name}')
+    h1 Seperation line ========
+
+    if name=='James'
+      h3=book.name
+    else
+      h3=input.name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
